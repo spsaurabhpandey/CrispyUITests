@@ -1,4 +1,4 @@
-Feature: User account creation and login
+Feature: Creation of user account and login
 
     I want to sign up and then be able to login to crispy-succotash application
 

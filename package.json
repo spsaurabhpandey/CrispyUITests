@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npx cypress open",
-    "headlessTest": "npx cypress run -b chrome"
+    "headlessChrome": "npx cypress run -b chrome",
+    "report": "node ./cypress/report.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +19,16 @@
     "cypress": "^8.3.0"
   },
   "devDependencies": {
-    "cypress-cucumber-preprocessor": "^4.2.0"
+    "cypress-cucumber-preprocessor": "^4.2.0",
+    "multiple-cucumber-html-reporter": "^1.18.0"
   },
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
   }
 }
