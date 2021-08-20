@@ -1,0 +1,15 @@
+stages: 
+  - startApp
+  - test
+startApp: 
+  script: 
+    - "git clone https://gitlab.com/sendcloud-public/crispy-succotash.git"
+    - "cd crispy-succotash"
+    - "docker-compose up"
+  stage: startApp
+test: 
+  script: 
+    - "npm install"
+    - "npm run headlessChrome"
+    - "npm run report"
+  stage: test

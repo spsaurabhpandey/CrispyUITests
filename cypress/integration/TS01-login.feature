@@ -4,7 +4,7 @@ Feature: Creation of user account and login
 
 
     #@ignore tag is used to ignore a particular scenario during test run.
-    @ignore
+    #@ignore
     Scenario Outline: sign up of new user(s) in the crispyApp
         Given I visit the url of the crispyApp
         When I click on "Sign Up" button

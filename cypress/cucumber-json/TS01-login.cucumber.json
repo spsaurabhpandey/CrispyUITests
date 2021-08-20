@@ -2,14 +2,14 @@
   {
     "description": "    I want to sign up and then be able to login to crispy-succotash application",
     "keyword": "Feature",
-    "name": "User account creation and login",
+    "name": "Creation of user account and login",
     "line": 1,
-    "id": "user-account-creation-and-login",
+    "id": "creation-of-user-account-and-login",
     "tags": [],
     "uri": "TS01-login.feature",
     "elements": [
       {
-        "id": "user-account-creation-and-login;check-if-user-can-login-using-valid-credentials",
+        "id": "creation-of-user-account-and-login;check-if-user-can-login-using-valid-credentials",
         "keyword": "Scenario",
         "line": 18,
         "name": "check if user can login using valid credentials",
@@ -23,7 +23,7 @@
             "name": "I visit the url of the crispyApp",
             "result": {
               "status": "passed",
-              "duration": 516000000
+              "duration": 7852000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I click on \"Login\" button",
             "result": {
               "status": "passed",
-              "duration": 193000000
+              "duration": 2288000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "I enter \"username1\" and \"p@ssword123\" in \"PLEASE SIGN IN\" form",
             "result": {
               "status": "passed",
-              "duration": 1161000000
+              "duration": 9152000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "I should be logged in the crispyApp",
             "result": {
               "status": "passed",
-              "duration": 21000000
+              "duration": 72000000
             }
           }
         ]
